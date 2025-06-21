@@ -1,0 +1,96 @@
+﻿@model SistemaNomina.Incapacidades
+
+@{
+    // Define el título de la página
+    ViewBag.Title = "Details";
+    // vista
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Incapacidades</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        @*Nombre del campo 'fecha_inicio'*@
+        <dt>
+            @Html.DisplayNameFor(model => model.fecha_inicio)
+        </dt>
+        @*Muestra el valor de 'fecha_inicio' del registro actual*@
+        <dd>
+            @Html.DisplayFor(model => model.fecha_inicio)
+        </dd>
+
+        @*Mismo orden que el anterior*@
+        <dt>
+            @Html.DisplayNameFor(model => model.fecha_fin)
+        </dt>
+        
+        <dd>
+            @Html.DisplayFor(model => model.fecha_fin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.numero_boleta)
+        </dt>
+        
+        <dd>
+            @Html.DisplayFor(model => model.numero_boleta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dias_incapacidad)
+        </dt>
+ 
+        <dd>
+            @Html.DisplayFor(model => model.dias_incapacidad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fecha_registro)
+        </dt>
+  
+        <dd>
+            @Html.DisplayFor(model => model.fecha_registro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Empleados.cedula)
+        </dt>
+      
+        <dd>
+            @Html.DisplayFor(model => model.Empleados.cedula)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Estados.nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estados.nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoIncapacidades.nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoIncapacidades.nombre)
+        </dd>
+    </dl>
+</div>
+<p>
+    @*Enlace para editar el registro actual, pasando el id de incapacidad*@
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id_incapacidad }) |
+    @*Enlace para regresar a la lista principal*@
+    @Html.ActionLink("Back to List", "Index")
+</p>

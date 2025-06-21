@@ -1,0 +1,73 @@
+﻿@model IEnumerable<SistemaNomina.Vacaciones> 
+
+@{
+    // Título navegador
+    ViewBag.Title = "Index";
+
+    // visita
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2> <!-- titulo página -->
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<!-- lista de registros de vacaciones -->
+<table class="table">
+    <tr>
+        <!-- Encabezados de columna -->
+        <th>
+            @Html.DisplayNameFor(model => model.periodo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dias_disponibles)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dias_disfrutados)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fecha_creacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fecha_actualizacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Empleados.cedula)
+        </th>
+        <th></th> <!-- Columna vacía para los botones de acción -->
+    </tr>
+
+    <!-- recorre lista  -->
+    @foreach (var item in Model)
+    {
+        <tr>
+            <!-- Se muestran los valores registro actual -->
+            <td>
+                @Html.DisplayFor(modelItem => item.periodo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dias_disponibles)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dias_disfrutados)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fecha_creacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fecha_actualizacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Empleados.cedula)
+            </td>
+            <td>
+                <!-- Enlaces para editar, ver detalles o eliminar el registro -->
+                @Html.ActionLink("Edit", "Edit", new { id = item.id_vacacion }) |
+                @Html.ActionLink("Details", "Details", new { id = item.id_vacacion }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.id_vacacion })
+            </td>
+        </tr>
+    }
+
+</table>

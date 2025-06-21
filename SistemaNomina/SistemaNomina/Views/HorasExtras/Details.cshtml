@@ -1,0 +1,140 @@
+﻿@model SistemaNomina.HorasExtras
+
+@{
+    ViewBag.Title = "Details"; // Título de la vista
+    Layout = "~/Views/Shared/_Layout.cshtml"; //  vista
+}
+
+<h2>Details</h2> <!-- Encabezado principal de la vista -->
+
+<div>
+    <h4>HorasExtras</h4> <!-- Subtítulo para la sección de detalles -->
+    <hr /> <!-- Línea horizontal para separación visual -->
+    <dl class="dl-horizontal">
+        <!-- Lista descriptiva con los detalles del registro -->
+        <dt>
+            @Html.DisplayNameFor(model => model.fecha) <!-- Nombre del campo fecha -->
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fecha) <!-- Valor del campo fecha -->
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.hora_inicio) <!-- Nombre del campo hora inicio -->
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.hora_inicio) <!-- Valor del campo hora inicio -->
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.hora_fin) <!-- Nombre del campo hora fin -->
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.hora_fin) <!-- Valor del campo hora fin -->
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.horas) <!-- Nombre del campo horas -->
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.horas) <!-- Valor del campo horas -->
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.valor_hora) <!-- Nombre del campo valor por hora -->
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.valor_hora) <!-- Valor del campo valor por hora -->
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.recargo) <!-- Nombre del campo recargo -->
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.recargo) <!-- Valor del campo recargo -->
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.total) <!-- Nombre del campo total -->
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.total) <!-- Valor del campo total -->
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.motivo) <!-- Nombre del campo motivo -->
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.motivo) <!-- Valor del campo motivo -->
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fecha_aprobacion) <!-- Nombre del campo fecha de aprobación -->
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fecha_aprobacion) <!-- Valor del campo fecha de aprobación -->
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fecha_creacion) <!-- Nombre del campo fecha de creación -->
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fecha_creacion) <!-- Valor del campo fecha de creación -->
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fecha_actualizacion) <!-- Nombre del campo fecha de actualización -->
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fecha_actualizacion) <!-- Valor del campo fecha de actualización -->
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Empleados.cedula) <!-- Nombre del campo cédula del empleado -->
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Empleados.cedula) <!-- Valor del campo cédula del empleado -->
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Estados.nombre) <!-- Nombre del estado -->
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estados.nombre) <!-- Valor del nombre del estado -->
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Usuarios.usuario) <!-- Nombre del usuario relacionado -->
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Usuarios.usuario) <!-- Valor del usuario relacionado -->
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TiposHoraExtra.nombre) <!-- Nombre del tipo de hora extra -->
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TiposHoraExtra.nombre) <!-- Valor del tipo de hora extra -->
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id_hora_extra }) | <!-- Enlace para editar este registro -->
+    @Html.ActionLink("Back to List", "Index") <!-- Enlace para regresar a la lista de registros -->
+</p>

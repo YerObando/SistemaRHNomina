@@ -1,0 +1,82 @@
+﻿@model IEnumerable<SistemaNomina.Horarios>
+
+@{
+    ViewBag.Title = "Index";
+    // Establece el título de la página como "Index"
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    // plantilla
+}
+
+<h2>Index</h2>
+@*Título lista prin*@
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+    @*Enlace para crear un nuevo registro de horario*@
+</p>
+
+<table class="table">
+    @* Tabla para mostrar la lista de horarios*@
+
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.nombre)
+            @*Encabezado de columna para el campo 'nombre'*@
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.hora_entrada)
+            @*Encabezado para 'hora_entrada'*@
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.hora_salida)
+
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fecha_creacion)
+
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fecha_actualizacion)
+
+        </th>
+        <th></th>
+        @*Columna vacía para los enlaces de acción (Editar, Detalles, Eliminar)*@
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        //  generar una fila por horario
+
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.nombre)
+                @*Muestra el nombre del horario*@
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.hora_entrada)
+                @*Muestra la hora de entrada*@
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.hora_salida)
+               
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fecha_creacion)
+                
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fecha_actualizacion)
+                
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.id_horario }) |
+                @*Enlace para editar el horario actual*@
+                @Html.ActionLink("Details", "Details", new { id = item.id_horario }) |
+                @*Enlace para ver detalles del horario actual*@
+                @Html.ActionLink("Delete", "Delete", new { id = item.id_horario })
+                @*Enlace para eliminar el horario actual*@
+            </td>
+        </tr>
+    }
+
+</table>

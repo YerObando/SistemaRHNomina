@@ -1,0 +1,50 @@
+﻿@model IEnumerable<SistemaNomina.Estados>
+
+@{
+    // Establece el título de la página
+    ViewBag.Title = "Listado de Estados";
+
+    // plantilla
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Listado de Estados</h2>
+
+<p>
+      @* Enlace para crear un nuevo estado *@
+    @Html.ActionLink("Nuevo", "Create")
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            @* Encabezado de la columna para el campo 'nombre'*@
+            @Html.DisplayNameFor(model => model.nombre)
+        </th>
+        <th>
+            @*Encabezado de la columna para el campo 'modulo'*@
+            @Html.DisplayNameFor(model => model.modulo)
+        </th>
+        <th></th> <!-- Columna vacía para los botones de acción -->
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @*Muestra el nombre del estado*@
+                @Html.DisplayFor(modelItem => item.nombre)
+            </td>
+            <td>
+                @*Muestra el módulo asociado al estado*@
+                @Html.DisplayFor(modelItem => item.modulo)
+            </td>
+            <td>
+                @*Enlaces para editar, ver detalles o eliminar el estado*@
+                @Html.ActionLink("Editar", "Edit", new { id = item.id_estado }) |
+                @Html.ActionLink("Detalles", "Details", new { id = item.id_estado }) |
+                @Html.ActionLink("Eliminar", "Delete", new { id = item.id_estado })
+            </td>
+        </tr>
+    }
+</table>

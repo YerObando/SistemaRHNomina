@@ -1,0 +1,136 @@
+﻿@model IEnumerable<SistemaNomina.Nomina>
+
+@{
+    ViewBag.Title = "Index"; // Título que aparece en la pestaña del navegador
+    Layout = "~/Views/Shared/_Layout.cshtml"; // plantilla vista
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")  <!--  nuevo registro -->
+</p>
+
+<table class="table">
+    <!-- mostrar los registros -->
+    <tr>
+        <!-- Encabezados columnas -->
+        <th>
+            @Html.DisplayNameFor(model => model.mes)  <!-- Muestra el nombre "mes" -->
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.anio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.salario_bruto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.horas_extras)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.salario_dias_feriados)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ccss)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ivm)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.isr)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.credito_hijos)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.credito_conyuge)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.otros_descuentos)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.base_imponible)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.salario_neto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fecha_creacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fecha_actualizacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Empleados.cedula) <!-- Nombre del empleado -->
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ISR1.descripcion) <!-- Descripción del ISR -->
+        </th>
+        <th></th> <!-- Columna para acciones (Editar, Detalles, Eliminar) -->
+    </tr>
+
+    <!-- Recorre lista y muestra sus datos -->
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.mes)  <!-- Muestra el mes -->
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.anio)  <!-- Muestra el año -->
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.salario_bruto)  <!-- Muestra el salario bruto -->
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.horas_extras)  <!-- Muestra horas extras -->
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.salario_dias_feriados)  <!-- Muestra salario días feriados -->
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ccss)  <!-- Muestra cotización CCSS -->
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ivm)  <!-- Muestra cotización IVM -->
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.isr)  <!-- Muestra impuesto ISR -->
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.credito_hijos)  <!-- Crédito por hijos -->
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.credito_conyuge)  <!-- Crédito por cónyuge -->
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.otros_descuentos)  <!-- Otros descuentos -->
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.base_imponible)  <!-- Base imponible -->
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.salario_neto)  <!-- Salario neto -->
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fecha_creacion)  <!-- Fecha de creación del registro -->
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fecha_actualizacion)  <!-- Fecha de última actualización -->
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Empleados.cedula)  <!-- Cédula del empleado -->
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ISR1.descripcion)  <!-- Descripción del ISR  -->
+            </td>
+            <td>
+                <!-- Enlaces para Editar, Ver detalles y Eliminar, enviando el id del registro -->
+                @Html.ActionLink("Edit", "Edit", new { id = item.id_nomina }) |
+                @Html.ActionLink("Details", "Details", new { id = item.id_nomina }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.id_nomina })
+            </td>
+        </tr>
+    }
+
+</table>

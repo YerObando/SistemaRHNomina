@@ -1,0 +1,90 @@
+﻿@model IEnumerable<SistemaNomina.Incapacidades>
+
+@{
+    // Título de la página que se mostrará en el navegador
+    ViewBag.Title = "Index";
+    //  vista
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @*nuevo registro de incapacidad*@
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<table class="table">
+    <tr>
+        @* Encabezados de la tabla que muestran los nombres de los campos a mostrar*@
+        <th>
+            @Html.DisplayNameFor(model => model.fecha_inicio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fecha_fin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.numero_boleta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.descripcion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dias_incapacidad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fecha_registro)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Empleados.cedula)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Estados.nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TipoIncapacidades.nombre)
+        </th>
+        <th></th>  @*Columna vacía para las acciones (editar, detalles, eliminar)*@
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            @* incapacidades para mostrar *@
+            <td>
+                @Html.DisplayFor(modelItem => item.fecha_inicio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fecha_fin)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.numero_boleta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.descripcion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dias_incapacidad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fecha_registro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Empleados.cedula)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Estados.nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoIncapacidades.nombre)
+            </td>
+            <td>
+                @*Enlaces para editar, ver detalles o eliminar el registro actual*@
+                @Html.ActionLink("Edit", "Edit", new { id = item.id_incapacidad }) |
+                @Html.ActionLink("Details", "Details", new { id = item.id_incapacidad }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.id_incapacidad })
+            </td>
+        </tr>
+    }
+
+</table>

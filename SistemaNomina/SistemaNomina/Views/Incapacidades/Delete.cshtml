@@ -1,0 +1,110 @@
+﻿@model SistemaNomina.Incapacidades
+
+@{
+    // Define el título de la página
+    ViewBag.Title = "Delete";
+    // vista
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Incapacidades</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        @*Muestra el nombre del campo 'fecha_inicio'*@
+        <dt>
+            @Html.DisplayNameFor(model => model.fecha_inicio)
+        </dt>
+        @*Muestra el valor de 'fecha_inicio' del registro actual*@
+        <dd>
+            @Html.DisplayFor(model => model.fecha_inicio)
+        </dd>
+
+        @*El mismo que el anterior, o sea, el orden*@
+        <dt>
+            @Html.DisplayNameFor(model => model.fecha_fin)
+        </dt>
+        
+        <dd>
+            @Html.DisplayFor(model => model.fecha_fin)
+        </dd>
+
+        
+        <dt>
+            @Html.DisplayNameFor(model => model.numero_boleta)
+        </dt>
+        
+        <dd>
+            @Html.DisplayFor(model => model.numero_boleta)
+        </dd>
+
+        
+        <dt>
+            @Html.DisplayNameFor(model => model.descripcion)
+        </dt>
+        
+        <dd>
+            @Html.DisplayFor(model => model.descripcion)
+        </dd>
+
+        
+        <dt>
+            @Html.DisplayNameFor(model => model.dias_incapacidad)
+        </dt>
+       
+        <dd>
+            @Html.DisplayFor(model => model.dias_incapacidad)
+        </dd>
+
+        
+        <dt>
+            @Html.DisplayNameFor(model => model.fecha_registro)
+        </dt>
+        
+        <dd>
+            @Html.DisplayFor(model => model.fecha_registro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Empleados.cedula)
+        </dt>
+        
+        <dd>
+            @Html.DisplayFor(model => model.Empleados.cedula)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Estados.nombre)
+        </dt>
+        
+        <dd>
+            @Html.DisplayFor(model => model.Estados.nombre)
+        </dd>
+
+        
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoIncapacidades.nombre)
+        </dt>
+        
+        <dd>
+            @Html.DisplayFor(model => model.TipoIncapacidades.nombre)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        // seguridad
+        @Html.AntiForgeryToken()
+
+<div class="form-actions no-color">
+    @*Botón para confirmar la eliminación del registro*@
+    <input type="submit" value="Delete" class="btn btn-default" /> |
+    @*Enlace para regresar a la lista principal sin eliminar*@
+    @Html.ActionLink("Back to List", "Index")
+</div>
+    }
+</div>

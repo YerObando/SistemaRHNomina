@@ -1,0 +1,71 @@
+﻿@model IEnumerable<SistemaNomina.Aguinaldo>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+@* Enlace para crear un nuevo registro de aguinaldo *@
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+@* Tabla que muestra la lista de aguinaldos con sus respectivos campos *@
+<table class="table">
+    <tr>
+        @* Encabezados de la tabla con nombres de columnas basados en los nombres de las propiedades del modelo *@
+        <th>
+            @Html.DisplayNameFor(model => model.monto_total)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.meses_laborados)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.anio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fecha_creacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fecha_actualizacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Empleados.cedula)
+        </th>
+        <th></th> @* Columna para acciones (Editar, Detalles, Eliminar) *@
+    </tr>
+
+    @* Itera sobre cada elemento en la colección del modelo para mostrar sus datos en filas *@
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.monto_total)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.meses_laborados)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.anio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fecha_creacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fecha_actualizacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Empleados.cedula)
+            </td>
+            <td>
+                @* Enlaces para las acciones Editar, Ver Detalles y Eliminar el registro específico *@
+                @Html.ActionLink("Edit", "Edit", new { id = item.id_aguinaldo }) |
+                @Html.ActionLink("Details", "Details", new { id = item.id_aguinaldo }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.id_aguinaldo })
+            </td>
+        </tr>
+    }
+
+</table>

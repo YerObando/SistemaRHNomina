@@ -1,0 +1,91 @@
+﻿@model SistemaNomina.Nomina
+
+@{
+    // Título de la página que se muestra en el navegador
+    ViewBag.Title = "Create";
+    //  vista
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm())
+{
+    // seguridad
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Nomina</h4>
+        <hr />
+        // Muestra los mensajes de error de validación si existen
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="form-group">
+            // Etiqueta para el campo id_empleado
+            @Html.LabelFor(model => model.id_empleado, "id_empleado", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                // Lista desplegable para seleccionar un empleado
+                @Html.DropDownList("id_empleado", null, htmlAttributes: new { @class = "form-control" })
+                // Mensaje de error específico para id_empleado
+                @Html.ValidationMessageFor(model => model.id_empleado, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            // Etiqueta para el campo id_isr
+            @Html.LabelFor(model => model.id_isr, "id_isr", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                // Lista desplegable para seleccionar ISR 
+                @Html.DropDownList("id_isr", null, htmlAttributes: new { @class = "form-control" })
+                // Mensaje de error específico para id_isr
+                @Html.ValidationMessageFor(model => model.id_isr, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            // Etiqueta para el campo mes
+            @Html.LabelFor(model => model.mes, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                // Campo para ingresar el mes
+                @Html.EditorFor(model => model.mes, new { htmlAttributes = new { @class = "form-control" } })
+                // Mensaje de error específico para mes
+                @Html.ValidationMessageFor(model => model.mes, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <!-- Cada campo tiene una etiqueta, un input para editar o seleccionar, y un espacio para mostrar mensajes de validación -->
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.anio, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.anio, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.anio, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.salario_bruto, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.salario_bruto, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.salario_bruto, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <!-- Botón para enviar el formulario y crear el registro -->
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    <!-- Link para regresar a la lista principal -->
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    //  validaciones 
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -1,0 +1,359 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\yerli\\OneDrive\\Documentos\\REPOSITORIOS\\nomina-main\\nomina-main\\SistemaNomina\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{78457227-EEC5-4544-B7CE-C68137E4A1E6}|SistemaNomina\\SistemaNomina.csproj|c:\\users\\yerli\\onedrive\\documentos\\repositorios\\nomina-main\\nomina-main\\sistemanomina\\sistemanomina\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{78457227-EEC5-4544-B7CE-C68137E4A1E6}|SistemaNomina\\SistemaNomina.csproj|solutionrelative:sistemanomina\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78457227-EEC5-4544-B7CE-C68137E4A1E6}|SistemaNomina\\SistemaNomina.csproj|C:\\Users\\yerli\\OneDrive\\Documentos\\REPOSITORIOS\\nomina-main\\nomina-main\\SistemaNomina\\sistemanomina\\views\\asistencia\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{78457227-EEC5-4544-B7CE-C68137E4A1E6}|SistemaNomina\\SistemaNomina.csproj|solutionrelative:sistemanomina\\views\\asistencia\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78457227-EEC5-4544-B7CE-C68137E4A1E6}|SistemaNomina\\SistemaNomina.csproj|C:\\Users\\yerli\\OneDrive\\Documentos\\REPOSITORIOS\\nomina-main\\nomina-main\\SistemaNomina\\sistemanomina\\controllers\\asistenciacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78457227-EEC5-4544-B7CE-C68137E4A1E6}|SistemaNomina\\SistemaNomina.csproj|solutionrelative:sistemanomina\\controllers\\asistenciacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78457227-EEC5-4544-B7CE-C68137E4A1E6}|SistemaNomina\\SistemaNomina.csproj|C:\\Users\\yerli\\OneDrive\\Documentos\\REPOSITORIOS\\nomina-main\\nomina-main\\SistemaNomina\\sistemanomina\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78457227-EEC5-4544-B7CE-C68137E4A1E6}|SistemaNomina\\SistemaNomina.csproj|solutionrelative:sistemanomina\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78457227-EEC5-4544-B7CE-C68137E4A1E6}|SistemaNomina\\SistemaNomina.csproj|C:\\Users\\yerli\\OneDrive\\Documentos\\REPOSITORIOS\\nomina-main\\nomina-main\\SistemaNomina\\sistemanomina\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{78457227-EEC5-4544-B7CE-C68137E4A1E6}|SistemaNomina\\SistemaNomina.csproj|solutionrelative:sistemanomina\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78457227-EEC5-4544-B7CE-C68137E4A1E6}|SistemaNomina\\SistemaNomina.csproj|C:\\Users\\yerli\\OneDrive\\Documentos\\REPOSITORIOS\\nomina-main\\nomina-main\\SistemaNomina\\sistemanomina\\views\\empleados\\detallevacaciones.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{78457227-EEC5-4544-B7CE-C68137E4A1E6}|SistemaNomina\\SistemaNomina.csproj|solutionrelative:sistemanomina\\views\\empleados\\detallevacaciones.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78457227-EEC5-4544-B7CE-C68137E4A1E6}|SistemaNomina\\SistemaNomina.csproj|C:\\Users\\yerli\\OneDrive\\Documentos\\REPOSITORIOS\\nomina-main\\nomina-main\\SistemaNomina\\sistemanomina\\controllers\\vacacionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78457227-EEC5-4544-B7CE-C68137E4A1E6}|SistemaNomina\\SistemaNomina.csproj|solutionrelative:sistemanomina\\controllers\\vacacionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78457227-EEC5-4544-B7CE-C68137E4A1E6}|SistemaNomina\\SistemaNomina.csproj|C:\\Users\\yerli\\OneDrive\\Documentos\\REPOSITORIOS\\nomina-main\\nomina-main\\SistemaNomina\\sistemanomina\\views\\solicitudesvacaciones\\solicitudespendientes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{78457227-EEC5-4544-B7CE-C68137E4A1E6}|SistemaNomina\\SistemaNomina.csproj|solutionrelative:sistemanomina\\views\\solicitudesvacaciones\\solicitudespendientes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78457227-EEC5-4544-B7CE-C68137E4A1E6}|SistemaNomina\\SistemaNomina.csproj|C:\\Users\\yerli\\OneDrive\\Documentos\\REPOSITORIOS\\nomina-main\\nomina-main\\SistemaNomina\\sistemanomina\\views\\usuarios\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{78457227-EEC5-4544-B7CE-C68137E4A1E6}|SistemaNomina\\SistemaNomina.csproj|solutionrelative:sistemanomina\\views\\usuarios\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78457227-EEC5-4544-B7CE-C68137E4A1E6}|SistemaNomina\\SistemaNomina.csproj|C:\\Users\\yerli\\OneDrive\\Documentos\\REPOSITORIOS\\nomina-main\\nomina-main\\SistemaNomina\\sistemanomina\\views\\usuarios\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{78457227-EEC5-4544-B7CE-C68137E4A1E6}|SistemaNomina\\SistemaNomina.csproj|solutionrelative:sistemanomina\\views\\usuarios\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78457227-EEC5-4544-B7CE-C68137E4A1E6}|SistemaNomina\\SistemaNomina.csproj|C:\\Users\\yerli\\OneDrive\\Documentos\\REPOSITORIOS\\nomina-main\\nomina-main\\SistemaNomina\\sistemanomina\\views\\usuarios\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{78457227-EEC5-4544-B7CE-C68137E4A1E6}|SistemaNomina\\SistemaNomina.csproj|solutionrelative:sistemanomina\\views\\usuarios\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 38,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:24:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:25:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:11:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:12:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:13:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:14:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:15:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{809f6ff3-8092-454a-8003-6d4091f9b5bb}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:16:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{80454082-9ab8-47d4-af23-82bf6739e2a9}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{809f6ff3-8092-454a-8003-6d4091f9b5bb}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:17:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:19:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:18:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:20:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:21:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:22:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:23:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{80454082-9ab8-47d4-af23-82bf6739e2a9}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:4:0:{80454082-9ab8-47d4-af23-82bf6739e2a9}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\yerli\\OneDrive\\Documentos\\REPOSITORIOS\\nomina-main\\nomina-main\\SistemaNomina\\SistemaNomina\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "SistemaNomina\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\yerli\\OneDrive\\Documentos\\REPOSITORIOS\\nomina-main\\nomina-main\\SistemaNomina\\SistemaNomina\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "SistemaNomina\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAOAAAAAAAAAAAAAAAOoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-15T18:37:53.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\yerli\\OneDrive\\Documentos\\REPOSITORIOS\\nomina-main\\nomina-main\\SistemaNomina\\SistemaNomina\\Views\\Asistencia\\Index.cshtml",
+              "RelativeDocumentMoniker": "SistemaNomina\\Views\\Asistencia\\Index.cshtml",
+              "ToolTip": "C:\\Users\\yerli\\OneDrive\\Documentos\\REPOSITORIOS\\nomina-main\\nomina-main\\SistemaNomina\\SistemaNomina\\Views\\Asistencia\\Index.cshtml",
+              "RelativeToolTip": "SistemaNomina\\Views\\Asistencia\\Index.cshtml",
+              "ViewState": "AgIAADQAAAAAAAAAAAAowEwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T06:08:58.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AsistenciaController.cs",
+              "DocumentMoniker": "C:\\Users\\yerli\\OneDrive\\Documentos\\REPOSITORIOS\\nomina-main\\nomina-main\\SistemaNomina\\SistemaNomina\\Controllers\\AsistenciaController.cs",
+              "RelativeDocumentMoniker": "SistemaNomina\\Controllers\\AsistenciaController.cs",
+              "ToolTip": "C:\\Users\\yerli\\OneDrive\\Documentos\\REPOSITORIOS\\nomina-main\\nomina-main\\SistemaNomina\\SistemaNomina\\Controllers\\AsistenciaController.cs",
+              "RelativeToolTip": "SistemaNomina\\Controllers\\AsistenciaController.cs",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAIwIgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T05:59:17.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DetalleVacaciones.cshtml",
+              "DocumentMoniker": "C:\\Users\\yerli\\OneDrive\\Documentos\\REPOSITORIOS\\nomina-main\\nomina-main\\SistemaNomina\\SistemaNomina\\Views\\Empleados\\DetalleVacaciones.cshtml",
+              "RelativeDocumentMoniker": "SistemaNomina\\Views\\Empleados\\DetalleVacaciones.cshtml",
+              "ToolTip": "C:\\Users\\yerli\\OneDrive\\Documentos\\REPOSITORIOS\\nomina-main\\nomina-main\\SistemaNomina\\SistemaNomina\\Views\\Empleados\\DetalleVacaciones.cshtml",
+              "RelativeToolTip": "SistemaNomina\\Views\\Empleados\\DetalleVacaciones.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-17T06:19:37.66Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "VacacionesController.cs",
+              "DocumentMoniker": "C:\\Users\\yerli\\OneDrive\\Documentos\\REPOSITORIOS\\nomina-main\\nomina-main\\SistemaNomina\\SistemaNomina\\Controllers\\VacacionesController.cs",
+              "RelativeDocumentMoniker": "SistemaNomina\\Controllers\\VacacionesController.cs",
+              "ToolTip": "C:\\Users\\yerli\\OneDrive\\Documentos\\REPOSITORIOS\\nomina-main\\nomina-main\\SistemaNomina\\SistemaNomina\\Controllers\\VacacionesController.cs",
+              "RelativeToolTip": "SistemaNomina\\Controllers\\VacacionesController.cs",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAAAIUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T04:24:20.877Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SolicitudesPendientes.cshtml",
+              "DocumentMoniker": "C:\\Users\\yerli\\OneDrive\\Documentos\\REPOSITORIOS\\nomina-main\\nomina-main\\SistemaNomina\\SistemaNomina\\Views\\SolicitudesVacaciones\\SolicitudesPendientes.cshtml",
+              "RelativeDocumentMoniker": "SistemaNomina\\Views\\SolicitudesVacaciones\\SolicitudesPendientes.cshtml",
+              "ToolTip": "C:\\Users\\yerli\\OneDrive\\Documentos\\REPOSITORIOS\\nomina-main\\nomina-main\\SistemaNomina\\SistemaNomina\\Views\\SolicitudesVacaciones\\SolicitudesPendientes.cshtml",
+              "RelativeToolTip": "SistemaNomina\\Views\\SolicitudesVacaciones\\SolicitudesPendientes.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-16T03:58:01.414Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\yerli\\OneDrive\\Documentos\\REPOSITORIOS\\nomina-main\\nomina-main\\SistemaNomina\\SistemaNomina\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "SistemaNomina\\Controllers\\UsuariosController.cs",
+              "ToolTip": "C:\\Users\\yerli\\OneDrive\\Documentos\\REPOSITORIOS\\nomina-main\\nomina-main\\SistemaNomina\\SistemaNomina\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "SistemaNomina\\Controllers\\UsuariosController.cs",
+              "ViewState": "AgIAAAEBAAAAAAAAAAAIwAsBAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T18:36:27.341Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\yerli\\OneDrive\\Documentos\\REPOSITORIOS\\nomina-main\\nomina-main\\SistemaNomina\\SistemaNomina\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "SistemaNomina\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\yerli\\OneDrive\\Documentos\\REPOSITORIOS\\nomina-main\\nomina-main\\SistemaNomina\\SistemaNomina\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "SistemaNomina\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T04:41:43.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\yerli\\OneDrive\\Documentos\\REPOSITORIOS\\nomina-main\\nomina-main\\SistemaNomina\\SistemaNomina\\Views\\Usuarios\\Delete.cshtml",
+              "RelativeDocumentMoniker": "SistemaNomina\\Views\\Usuarios\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\yerli\\OneDrive\\Documentos\\REPOSITORIOS\\nomina-main\\nomina-main\\SistemaNomina\\SistemaNomina\\Views\\Usuarios\\Delete.cshtml",
+              "RelativeToolTip": "SistemaNomina\\Views\\Usuarios\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-15T18:44:07.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\yerli\\OneDrive\\Documentos\\REPOSITORIOS\\nomina-main\\nomina-main\\SistemaNomina\\SistemaNomina\\Views\\Usuarios\\Create.cshtml",
+              "RelativeDocumentMoniker": "SistemaNomina\\Views\\Usuarios\\Create.cshtml",
+              "ToolTip": "C:\\Users\\yerli\\OneDrive\\Documentos\\REPOSITORIOS\\nomina-main\\nomina-main\\SistemaNomina\\SistemaNomina\\Views\\Usuarios\\Create.cshtml",
+              "RelativeToolTip": "SistemaNomina\\Views\\Usuarios\\Create.cshtml",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAuwF4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-15T18:37:20.552Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\yerli\\OneDrive\\Documentos\\REPOSITORIOS\\nomina-main\\nomina-main\\SistemaNomina\\SistemaNomina\\Views\\Usuarios\\Login.cshtml",
+              "RelativeDocumentMoniker": "SistemaNomina\\Views\\Usuarios\\Login.cshtml",
+              "ToolTip": "C:\\Users\\yerli\\OneDrive\\Documentos\\REPOSITORIOS\\nomina-main\\nomina-main\\SistemaNomina\\SistemaNomina\\Views\\Usuarios\\Login.cshtml",
+              "RelativeToolTip": "SistemaNomina\\Views\\Usuarios\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-15T18:55:32.357Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

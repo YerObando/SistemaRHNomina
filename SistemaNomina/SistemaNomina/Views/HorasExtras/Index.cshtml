@@ -1,0 +1,125 @@
+﻿@model IEnumerable<SistemaNomina.HorasExtras>
+
+@{
+    // Establece el título de la página
+    ViewBag.Title = "Index";
+    //  vista
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @*Nuevo registro*@ 
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<table class="table">
+    <tr>
+        @*Encabezados tablas*@
+        <th>
+            @Html.DisplayNameFor(model => model.fecha)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.hora_inicio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.hora_fin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.horas)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.valor_hora)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.recargo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.total)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.motivo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fecha_aprobacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fecha_creacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fecha_actualizacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Empleados.cedula)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Estados.nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Usuarios.usuario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TiposHoraExtra.nombre)
+        </th>
+        <th></th> <!-- Columna para acciones -->
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            @*Se muestra cada campo del registro de Horas Extras en la fila*@
+            <td>
+                @Html.DisplayFor(modelItem => item.fecha)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.hora_inicio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.hora_fin)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.horas)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.valor_hora)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.recargo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.total)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.motivo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fecha_aprobacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fecha_creacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fecha_actualizacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Empleados.cedula)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Estados.nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Usuarios.usuario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TiposHoraExtra.nombre)
+            </td>
+            <td>
+                @* Enlaces para editar, ver detalles o eliminar el registro actual*@
+                @Html.ActionLink("Edit", "Edit", new { id = item.id_hora_extra }) |
+                @Html.ActionLink("Details", "Details", new { id = item.id_hora_extra }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.id_hora_extra })
+            </td>
+        </tr>
+    }
+</table>

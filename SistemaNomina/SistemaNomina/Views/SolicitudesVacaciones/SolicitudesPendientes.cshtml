@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "SolicitudesPendientes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>SolicitudesPendientes</h2>
+@model IEnumerable<SistemaNomina.SolicitudesVacaciones>
+
+<h2>Solicitudes Pendientes</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Solicitud</th>
+            <th>Usuarios</th>
+            <th>Fecha Inicio</th>
+            <th>Fecha Fin</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var solicitud in Model)
+        {
+            <tr>
+                <td>@solicitud.id_solicitud</td>
+                <td>@solicitud.Usuarios.usuario</td>
+                <td>@solicitud.fecha_inicio.ToShortDateString()</td>
+                <td>@solicitud.fecha_fin.ToShortDateString()</td>
+                <td>@solicitud.Estados.nombre</td>
+                <td>
+                    @Html.ActionLink("Detalles", "Details", new { id = solicitud.id_solicitud })
+                    @Html.ActionLink("Aprobar", "Aprobar", new { id = solicitud.id_solicitud })
+                    @Html.ActionLink("Rechazar", "Rechazar", new { id = solicitud.id_solicitud })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

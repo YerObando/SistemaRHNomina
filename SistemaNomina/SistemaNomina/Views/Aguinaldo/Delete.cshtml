@@ -1,0 +1,168 @@
+﻿@model SistemaNomina.Aguinaldo
+
+@{
+    ViewBag.Title = "Eliminar Aguinaldo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    :root {
+        --azul-oscuro: #221d42;
+        --celeste: #1788ca;
+        --amarillo: #fab61b;
+        --gris-claro: #e7e8eb;
+        --blanco: #ffffff;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: var(--gris-claro);
+        color: var(--azul-oscuro);
+        margin: 0;
+        padding: 1rem;
+    }
+
+    h2, h3, h4 {
+        color: var(--azul-oscuro);
+    }
+
+    hr {
+        border: 1px solid var(--celeste);
+    }
+
+    .dl-horizontal {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem 1rem;
+        max-width: 600px;
+        margin-bottom: 2rem;
+    }
+
+        .dl-horizontal dt {
+            flex: 0 0 40%;
+            font-weight: bold;
+            color: var(--azul-oscuro);
+        }
+
+        .dl-horizontal dd {
+            flex: 1 1 55%;
+            margin: 0;
+            word-wrap: break-word;
+        }
+
+    .form-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    input[type="submit"] {
+        background-color: var(--celeste);
+        color: var(--blanco);
+        border: none;
+        padding: 0.5rem 1.5rem;
+        font-size: 1rem;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        flex: 1 1 auto;
+        max-width: 150px;
+    }
+
+        input[type="submit"]:hover {
+            background-color: var(--azul-oscuro);
+        }
+
+    a.btn-back {
+        color: var(--azul-oscuro);
+        background-color: var(--amarillo);
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        flex: 1 1 auto;
+        max-width: 150px;
+        text-align: center;
+    }
+
+        a.btn-back:hover {
+            background-color: var(--azul-oscuro);
+            color: var(--blanco);
+        }
+</style>
+
+<h2>Eliminar Aguinaldo Seleccionado</h2>
+
+@* Mensaje de confirmación para borrar el registro *@
+<h3>La información se eliminará permanentemente.</h3>
+
+<div>
+    <h4>Aguinaldo</h4>
+    <hr />
+
+    @* Lista de detalles del objeto Aguinaldo que se va a eliminar *@
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.monto_total)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.monto_total)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.meses_laborados)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.meses_laborados)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.anio)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.anio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fecha_creacion)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.fecha_creacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fecha_actualizacion)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.fecha_actualizacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Empleados.cedula)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Empleados.cedula)
+        </dd>
+    </dl>
+
+    @* Formulario para confirmar la eliminación del registro *@
+    @using (Html.BeginForm())
+    {
+        @* seguridad *@
+        @Html.AntiForgeryToken()
+
+        @* Campo oculto para enviar id (ajusta el nombre si tu modelo usa otro) *@
+        @Html.HiddenFor(model => model.id_aguinaldo)
+
+        <div class="form-actions no-color">
+            @* Botón para eliminar el registro *@
+            <input type="submit" value="Eliminar" class="btn btn-default" /> |
+
+            @* Enlace para volver al listado sin eliminar *@
+            @Html.ActionLink("Regresar a la lista", "Index", null, new { @class = "btn-back" })
+        </div>
+    }
+</div>

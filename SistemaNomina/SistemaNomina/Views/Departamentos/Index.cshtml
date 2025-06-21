@@ -1,0 +1,48 @@
+﻿@model IEnumerable<SistemaNomina.Departamentos>
+
+@{
+    ViewBag.Title = "Index"; // Título que se muestra en la pestaña o encabezado de la página
+    Layout = "~/Views/Shared/_Layout.cshtml"; 
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create") @* Enlace para crear un nuevo departamento*@
+</p>
+<table class="table">
+    <!-- Tabla para listar los departamentos -->
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.nombre) @*Encabezado columna: Nombre del departamento*@
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fecha_creacion) @*Encabezado columna: Fecha de creación*@
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fecha_actualizacion) @*Encabezado columna: Fecha de actualización*@
+        </th>
+        <th></th> <!-- Columna para acciones (Editar, Detalles, Eliminar) -->
+    </tr>
+
+    @foreach (var item in Model)
+    { // Recorre cada departamento en la lista del modelo
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.nombre) @*Muestra el nombre del departamento*@
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fecha_creacion) @* Muestra la fecha de creación*@
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fecha_actualizacion) @*Muestra la fecha de actualización*@
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.id_departamento }) |  @*Enlace para editar el departamento*@
+                @Html.ActionLink("Details", "Details", new { id = item.id_departamento }) | @*Enlace para ver detalles*@
+                @Html.ActionLink("Delete", "Delete", new { id = item.id_departamento }) @*Enlace para eliminar el departamento*@
+            </td>
+        </tr>
+    }
+
+</table>

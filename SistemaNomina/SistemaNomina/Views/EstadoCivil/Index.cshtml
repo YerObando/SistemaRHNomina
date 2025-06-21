@@ -1,0 +1,43 @@
+﻿@model IEnumerable<SistemaNomina.EstadoCivil>
+
+@{
+    // Define el título de la página
+    ViewBag.Title = "Index";
+
+    // plantilla uso
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    <!-- Enlace para crear un nuevo registro de estado civil -->
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            <!-- Encabezado de la columna que muestra el nombre del estado civil -->
+            @Html.DisplayNameFor(model => model.nombre)
+        </th>
+        <th></th> <!-- Columna vacía para las acciones -->
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                <!-- Muestra el valor del campo 'nombre' para cada elemento -->
+                @Html.DisplayFor(modelItem => item.nombre)
+            </td>
+            <td>
+                <!-- Enlaces para Editar, Ver Detalles o Eliminar el estado civil -->
+                @Html.ActionLink("Edit", "Edit", new { id = item.id_estado_civil }) |
+                @Html.ActionLink("Details", "Details", new { id = item.id_estado_civil }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.id_estado_civil })
+            </td>
+        </tr>
+    }
+
+</table>

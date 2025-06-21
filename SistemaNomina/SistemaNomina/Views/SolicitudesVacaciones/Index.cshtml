@@ -1,0 +1,103 @@
+﻿@model IEnumerable<SistemaNomina.SolicitudesVacaciones>
+
+@{
+    // Título  navegador
+    ViewBag.Title = "Solicitud de Vacaciones";
+    // Viista
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    <!-- crear una nueva solicitud de vacaciones -->
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<!--  lista de solicitudes de vacaciones -->
+<table class="table">
+    <tr>
+        <!-- columnas con los nombres propiedades -->
+        <th>
+            @Html.DisplayNameFor(model => model.fecha_inicio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fecha_fin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fecha_solicitud)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fecha_aprobacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.comentario_solicitud)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.comentario_respuesta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fecha_creacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fecha_actualizacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Estados.nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Usuarios.usuario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Vacaciones.periodo)
+        </th>
+        <th></th> <!-- Columna para acciones como Editar, Detalles y Eliminar -->
+    </tr>
+
+    <!-- Recorremos cada elemento de la lista de solicitudes y mostramos sus datos -->
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.fecha_inicio)  <!-- Muestra la fecha de inicio de vacaciones -->
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fecha_fin)  <!-- Muestra la fecha de fin de vacaciones -->
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fecha_solicitud)  <!-- Muestra la fecha cuando se hizo la solicitud -->
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fecha_aprobacion)  <!-- Muestra la fecha cuando se aprobó la solicitud -->
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.comentario_solicitud)  <!-- Muestra comentario de la solicitud -->
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.comentario_respuesta)  <!-- Muestra respuesta o comentario a la solicitud -->
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fecha_creacion)  <!-- Fecha en que se creó el registro -->
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fecha_actualizacion)  <!-- Fecha de la última actualización -->
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Estados.nombre)  <!-- Nombre del estado de la solicitud -->
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Usuarios.usuario)  <!-- Nombre del usuario que hizo la solicitud -->
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Vacaciones.periodo)  <!-- Periodo de vacaciones al que corresponde la solicitud -->
+            </td>
+            <td>
+                <!-- Enlaces para editar, ver detalles o eliminar la solicitud -->
+                @Html.ActionLink("Edit", "Edit", new { id = item.id_solicitud }) |
+                @Html.ActionLink("Details", "Details", new { id = item.id_solicitud }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.id_solicitud })
+            </td>
+        </tr>
+    }
+
+</table>

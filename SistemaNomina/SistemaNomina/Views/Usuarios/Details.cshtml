@@ -1,0 +1,53 @@
+﻿@model SistemaNomina.Usuarios
+
+@{
+    ViewBag.Title = "Detalles del Usuario"; // Título del navegador
+    Layout = "~/Views/Shared/_Layout.cshtml"; // Layout principal del sitio
+}
+
+<h2>Detalles del Usuario</h2> <!-- Título en la página -->
+
+<div>
+    <h4>Información del Usuario</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <!-- Lista de etiquetas y valores -->
+
+        <dt>@Html.DisplayNameFor(model => model.usuario)</dt>
+        <dd>@Html.DisplayFor(model => model.usuario)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.contrasena)</dt>
+        <dd>@Html.DisplayFor(model => model.contrasena)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.primer_ingreso)</dt>
+        <dd>@Html.DisplayFor(model => model.primer_ingreso)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.fecha_creacion)</dt>
+        <dd>@Html.DisplayFor(model => model.fecha_creacion)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.fecha_actualizacion)</dt>
+        <dd>@Html.DisplayFor(model => model.fecha_actualizacion)</dd>
+
+        <!-- Validamos que el objeto relacionado Empleados no sea nulo -->
+        @if (Model.Empleados != null)
+        {
+            <dt>Cédula del Empleado</dt>
+            <dd>@Html.DisplayFor(model => model.Empleados.cedula)</dd>
+        }
+
+        <!-- Validamos que el objeto relacionado Roles no sea nulo -->
+        @if (Model.Roles != null)
+        {
+            <dt>Rol Asignado</dt>
+            <dd>@Html.DisplayFor(model => model.Roles.nombre)</dd>
+        }
+
+    </dl>
+</div>
+
+<!-- Botones de acción -->
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.id_usuario }, new { @class = "btn btn-primary" }) <!-- Botón para editar -->
+    @Html.Raw("&nbsp;") <!-- Espacio entre botones -->
+    @Html.ActionLink("Volver al Listado", "Index", null, new { @class = "btn btn-secondary" }) <!-- Botón para regresar -->
+</p>

@@ -1,0 +1,88 @@
+﻿@model SistemaNomina.Aguinaldo
+
+@{
+    ViewBag.Title = "Calcular Nuevo Aguinaldo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Agregar Datos a Calcular</h2>
+
+@* formulario*@
+@using (Html.BeginForm())
+{
+    @* seguridad *@
+    @Html.AntiForgeryToken()
+
+    <div class="container">
+        <h4 class="mt-4">Aguinaldo</h4>
+        <hr />
+
+        @* Muestra errores de validación del modelo, si existen *@
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="row mb-3">
+            @* Campo desplegable para seleccionar el empleado *@
+            <div class="col-md-6">
+                @Html.LabelFor(model => model.id_empleado, "Empleado", htmlAttributes: new { @class = "form-label fw-bold" })
+                @Html.DropDownList("id_empleado", null, htmlAttributes: new { @class = "form-select" })
+                @Html.ValidationMessageFor(model => model.id_empleado, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            @* Campo para ingresar el monto total del aguinaldo *@
+            <div class="col-md-6">
+                @Html.LabelFor(model => model.monto_total, htmlAttributes: new { @class = "form-label fw-bold" })
+                @Html.EditorFor(model => model.monto_total, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.monto_total, "", new { @class = "text-danger" })
+            </div>
+
+            @* Campo para ingresar los meses laborados *@
+            <div class="col-md-6">
+                @Html.LabelFor(model => model.meses_laborados, htmlAttributes: new { @class = "form-label fw-bold" })
+                @Html.EditorFor(model => model.meses_laborados, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.meses_laborados, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            @* Campo para ingresar el año correspondiente al aguinaldo *@
+            <div class="col-md-6">
+                @Html.LabelFor(model => model.anio, htmlAttributes: new { @class = "form-label fw-bold" })
+                @Html.EditorFor(model => model.anio, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.anio, "", new { @class = "text-danger" })
+            </div>
+
+            @* Campo para ingresar la fecha de creación del registro *@
+            <div class="col-md-6">
+                @Html.LabelFor(model => model.fecha_creacion, htmlAttributes: new { @class = "form-label fw-bold" })
+                @Html.EditorFor(model => model.fecha_creacion, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.fecha_creacion, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="row mb-4">
+            @* Campo para ingresar la fecha de última actualización del registro *@
+            <div class="col-md-6">
+                @Html.LabelFor(model => model.fecha_actualizacion, htmlAttributes: new { @class = "form-label fw-bold" })
+                @Html.EditorFor(model => model.fecha_actualizacion, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.fecha_actualizacion, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        @* Botón para enviar el formulario *@
+        <div class="mb-3">
+            <button type="submit" class="btn" style="background-color: #1788ca; color: #ffffff; font-weight: bold;">Crear</button>
+        </div>
+    </div>
+}
+
+@* Enlace para volver al listado de registros *@
+<div class="container mb-5">
+    @Html.ActionLink("Volver al listado", "Index", null, new { @class = "btn", style = "background-color: #fab61b; color: #221d42; font-weight: bold;" })
+</div>
+
+@* validar  *@
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
